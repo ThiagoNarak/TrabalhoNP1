@@ -12,6 +12,7 @@ public class FirstClass extends Assento {
     private double taxaCancelamento;
     private int prioridade;
     private Assento assentosPrimeiraClasse[][] = new Assento[3][4];
+    private Pessoa pessoa[][] =new Pessoa[3][4];
 
     //construtor personalisado
 
@@ -127,11 +128,13 @@ public class FirstClass extends Assento {
     public void cancelAssento(int fila, char coluna) {
         assentosPrimeiraClasse[fila - 1][coluna - 'A'].setAssentoEstado(false);
     }
+
+
     // reserva assento
     public void setAssentosPrimeiraClasse(int fila, char coluna) {
         assentosPrimeiraClasse[fila - 1][coluna - 'A'].setAssentoEstado(true);
     }
-    // imprime map de assentos
+    // imprime mapa de assentos
     public void mapaAssentos(){
 
         System.out.printf("%n%40s%n", "MAPA PRIMEIRA CLASSE");
@@ -148,7 +151,7 @@ public class FirstClass extends Assento {
             System.out.println();
 
         }
-        System.out.print("\nLegenda: X - Ocupado / Y - Livre\n");
+        System.out.print("\nLegenda: X - Ocupado / O - Livre\n");
         System.out.println();
     }
 }

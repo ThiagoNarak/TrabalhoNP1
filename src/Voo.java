@@ -20,13 +20,16 @@ public class Voo extends Compania {
     private Pessoa coPiloto = new CoPiloto();
     private int codigo;
 
-    FirstClass firstClass = new FirstClass(); // CRIA UMA CASSE FIRSTCLASS PARA O VOO
-    Business business = new Business();       // CRIA UMA CLASSE BUSINES PARA O VOO
-    Economy economy = new Economy();          // CRIA UMA CLASSE ECONOMY PARA O VOO
+    FirstClass firstClass; // CRIA UMA CASSE FIRSTCLASS PARA O VOO
+    Business business;    // CRIA UMA CLASSE BUSINES PARA O VOO
+    Economy economy ;          // CRIA UMA CLASSE ECONOMY PARA O VOO
 
     //CONSTRUTOR SUPER------------------------------------------------
     public Voo(String ciaArea, Date data, String origem, String destino) {
         super(ciaArea);
+        firstClass= new FirstClass();
+        business = new Business();
+        economy = new Economy();
         this.data = data;
         this.horario = horario;
         this.origem = origem;
@@ -38,7 +41,7 @@ public class Voo extends Compania {
     //GETSETS------------------------------------------------
     public String getData() {
         String data;
-        data = String.format("%d/%d/%d",this.data.getYear(),this.data.getMonth(),this.data.getDay());
+        data = String.format("%d/%d/%d hora: %d:%d",this.data.getYear(),this.data.getMonth(),this.data.getDay(),this.data.getHours(),this.data.getMinutes());
         return data;
     }
     public int getCodigo() {

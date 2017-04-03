@@ -10,6 +10,7 @@ public class Assento {
     private double largura;
     private double comprimento;
     private boolean assentoEstado = false;
+    private Pessoa pessoa;
 
     // Construtor padrão para não ser preciso inicializar Assento dentro do construtor de firstClass
     public Assento(){
@@ -20,6 +21,10 @@ public class Assento {
         this.fileira = fileira;
         this.coluna = coluna;
     }
+
+
+
+
 
     public int getNum() {
         return fileira;
