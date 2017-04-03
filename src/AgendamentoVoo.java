@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -27,57 +28,96 @@ public class AgendamentoVoo {
             menu=scanner.next().charAt(0);
             switch (menu) {
                 case 'a':
+                    System.out.println("digite compania");
+                    String compania = scanner.nextLine();
+                    compania = scanner.nextLine();
 
-                    Voo voo = new Voo("TAM",new Date(2017,9,25,16,30),"FOR","SAO");
+                    System.out.println("digite o ano");
+                    int ano = scanner.nextInt();
+                    System.out.println("digite o mes");
+                    int mes = scanner.nextInt();
+                    System.out.println("digite o dia");
+                    int dia = scanner.nextInt();
+                    System.out.println("digite hora");
+                    int hora = scanner.nextInt();
+                    System.out.println("digite minuto");
+                    int minuto = scanner.nextInt();
+                    System.out.println("digite a origem");
+                    String origem=scanner.nextLine();
+                    origem=scanner.nextLine();
+                    origem=origem.substring(0,4);
+                    System.out.println("digite o destino");
+                    String destino= scanner.nextLine();
+                    destino=destino.substring(0,4);
 
-                    // TESTE DA CLASSE ASSENTO E SUAS SUB CLASSES
-//                    FirstClass fistClass = new FirstClass();
-//                    fistClass.setAssentosPrimeiraClasse(2, 'C');
-//                    fistClass.setAssentosPrimeiraClasse(2, 'A');
-//                    fistClass.setAssentosPrimeiraClasse(2, 'B');
-//                    fistClass.mapaAssentos();
-//                    fistClass.cancelAssento(2, 'B');
-//                    fistClass.mapaAssentos();
-//
-//                    Business business = new Business();
-//                    business.setAssentosBusiness(4, 'A');
-//                    business.setAssentosBusiness(5, 'B');
-//                    business.setAssentosBusiness(6, 'C');
-//                    business.setAssentosBusiness(7, 'D');
-//                    business.setAssentosBusiness(8, 'A');
-//                    business.setAssentosBusiness(8, 'B');
-//                    business.mapaAssentos();
-//                    business.cancelAssento(5, 'B');
-//                    business.mapaAssentos();
-//
-//                    Economy economy = new Economy();
-//                    economy.setAssentosEconomy(21, 'F');
-//                    economy.setAssentosEconomy(12, 'A');
-//                    economy.mapaAssentos();
-//                    economy.cancelAssento(12, 'A');
-//                    economy.mapaAssentos();
-
+                    Voo voo = new Voo("TAM", new Date(ano, mes, dia, hora, minuto), "FOR", "SAO");
                     voolist.add(voo);
-                    voo = new Voo("GOL",new Date(2017,4,8,14,15),"BRA","JOA");
+                    voo = new Voo("TAM", new Date(ano, mes, dia, hora + 3, minuto), "FOR", retornarEscala(origem,destino), "SAO");
                     voolist.add(voo);
-                    voo = new Voo("AVIANCA",new Date(2017,5,1,14,10),"MAC","FOR");
+                    voo = new Voo("TAM", new Date(ano, mes, dia, hora + 6, minuto), "FOR", retornarEscala(origem,destino), "SAO");
                     voolist.add(voo);
                     break;
                 case 'b':
                     System.out.println("Voo's disponiveis");
-                    for (Voo v:voolist) {
-                        //TODO: IMPLEMENTAR CONDICAO DE MOSTRAR APENAS OS VOOS DISPONIVEIS ATRAVEZ DATA e HORA -gaby
+                    for (Voo v : voolist) {
+                        if (v.getEscala() == null) {
+                            System.out.printf("\nCompania %s, data: %s,Origem: %s, Destino %s\n",
+                                    v.getCiaArea(),
+                                    v.getData(),
+                                    v.getOrigem(),
+                                    v.getDestino());
+                        } else {
+                            System.out.printf("\nCompania %s, data: %s,Origem: %s, Escala: %s, Destino %s\n",
+                                    v.getCiaArea(),
+                                    v.getData(),
+                                    v.getOrigem(),
+                                    v.getEscala(),
+                                    v.getDestino());
+                        }
 
-                        System.out.printf("\nCompania %s, data: %s,Origem: %s, Destino %s\n",
-                                v.getCiaArea(),
-                                v.getData(),
-                                v.getOrigem(),
-                                v.getDestino());
                     }
 
                     break;
                 case 'c':
+                    System.out.println("Voo's disponiveis");
+                    for (Voo v : voolist) {
+                        //TODO: IMPLEMENTAR CONDICAO DE MOSTRAR APENAS OS VOOS DISPONIVEIS ATRAVEZ DATA e HORA -gaby
 
+                        imprimirVoo(v);
+                    }
+                    System.out.println("digite o codigo do voo a ser comprado passagem.");
+                    int voocodigo = scanner.nextInt();
+                    System.out.println("digite a classe que deseja comprar: ");
+                    System.out.println("1- FirstClass");
+                    System.out.println("2- Business");
+                    System.out.println("3- Economy");
+                    int classe = scanner.nextInt();
+                    switch (classe) {
+                        case 1:
+                            for (Voo v : voolist) {
+                                if (v.getCodigo() == voocodigo) {
+                                    v.firstClass.mapaAssentos();
+                                    System.out.println("digite o assento a ser comprado.");
+                                    System.out.println("digite a fileira em numero.");
+                                    int fila = scanner.nextInt();
+                                    System.out.println("digite a coluna em letra.");
+                                    char coluna = scanner.next().charAt(0);
+
+                                    if (v.firstClass.getAssentoEstado() == true) {
+                                        System.out.println("digite outro assento pois esta ocupado");
+                                    } else {
+                                        v.firstClass.setAssentosPrimeiraClasse(fila, coluna);
+                                        System.out.println("digite o nome do comprador da passagem");
+                                        Pessoa pessoa = new Pessoa();
+                                        pessoa.setNome(scanner.nextLine());
+                                        pessoa.setSobrenome(scanner.nextLine());
+                                        v.firstClass.setPessoa(pessoa, fila, coluna);
+                                    }
+
+                                }
+                            }
+
+                    }
 
                     break;
                 case 'd':
@@ -95,59 +135,10 @@ public class AgendamentoVoo {
                     }
 
                     break;
-                case 'e': break;
-                case 'f':
-                    System.out.println("Voo's disponiveis");
-                    for (Voo v:voolist) {
-                        //TODO: IMPLEMENTAR CONDICAO DE MOSTRAR APENAS OS VOOS DISPONIVEIS ATRAVEZ DATA e HORA -gaby
-
-                        System.out.printf("\ncodigo: %d | Compania %s, data: %s,Origem: %s, Destino %s\n",
-                                v.getCodigo(),
-                                v.getCiaArea(),
-                                v.getData(),
-                                v.getOrigem(),
-                                v.getDestino());
-                    }
-                    System.out.println("digite o codigo do voo a ser comprado passagem.");
-                    int voocodigo=scanner.nextInt();
-                    System.out.println("digite a classe que deseja comprar: ");
-                    System.out.println("1- FirstClass");
-                    System.out.println("2- Business");
-                    System.out.println("3- Economy");
-                    int classe=scanner.nextInt();
-                    switch (classe){
-                        case 1:
-                            for (Voo v:voolist) {
-                                    if(v.getCodigo()==voocodigo){
-                                        v.firstClass.mapaAssentos();
-                                        System.out.println("digite o assento a ser comprado.");
-                                        System.out.println("digite a fileira em numero.");
-                                        int fila= scanner.nextInt();
-                                        System.out.println("digite a coluna em letra.");
-                                        char coluna= scanner.next().charAt(0);
-
-                                        if(v.firstClass.getAssentoEstado()==true){
-                                            System.out.println("digite outro assento pois esta ocupado");
-                                        }else{
-                                            v.firstClass.setAssentosPrimeiraClasse(fila,coluna);
-                                            System.out.println("digite o nome do comprador da passagem");
-                                            Pessoa pessoa= new Pessoa();
-                                            pessoa.setNome(scanner.nextLine());
-                                            pessoa.setSobrenome(scanner.nextLine());
-                                            v.firstClass.setPessoa(pessoa);
-                                        }
-
-                                    }
-                            }
-
-
-
-                            break;
-                        case 2: break;
-                        case 3: break;
-                    }
-
+                case 'e':
+                    //EMITIR CARTAO EMBARQUE
                     break;
+
                 case 'g':
                     System.out.println("deseja incluir qual tripulação abaixo.");
                     System.out.println("1- piloto");
@@ -209,5 +200,41 @@ public class AgendamentoVoo {
             }
 
         }while(menu!='0');
+    }
+    public static String retornarEscala(String origem,String destino){
+        String capitais[] = {"(ARA)", "(BEL)", "(BHZ)", "BVI)", "(BRA)", "(CPG)", "(CUB)", "(CUR)", "(FLO)", "(FOR)",
+                "(GOI)", "(JPE)", "(MAC)", "(MCO)", "(MAN)", "(NAT)", "(PAL)", "(POA)", "(POV)", "(REC)", "(RBR)", "(RIO)",
+                "(SAL)", "(SLU)", "(SAO)", "(THE)", "(VIT)"};
+        Random r = new Random();
+        boolean refazer =false;
+        do {
+            if (origem.equals(capitais[r.nextInt(27)]) || destino.equals(capitais[r.nextInt(27)])) {
+                refazer = true;
+            }else{
+                refazer=false;
+            }
+        }while(refazer==true);
+        return capitais[r.nextInt(capitais.length)];
+    }
+    public static void imprimirVoo(Voo v){
+        if (v.getEscala() == null) {
+            System.out.printf("\ncodigo: %d |Compania %s, data: %s,horario %s ,Origem: %s, Destino %s\n",
+                    v.getCodigo(),
+                    v.getCiaArea(),
+                    v.getData(),
+                    v.getHorario(),
+                    v.getOrigem(),
+                    v.getDestino());
+        }else{
+            System.out.printf("\ncodigo: %d |Compania %s, data: %s,horario %s ,Origem: %s,Escala: %s, Destino %s\n",
+                    v.getCodigo(),
+                    v.getCiaArea(),
+                    v.getData(),
+                    v.getHorario(),
+                    v.getOrigem(),
+                    v.getEscala(),
+                    v.getDestino());
+
+        }
     }
 }

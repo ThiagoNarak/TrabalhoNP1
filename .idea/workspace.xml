@@ -5,9 +5,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NP1.uml" afterPath="$PROJECT_DIR$/src/NP1.uml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AgendamentoVoo.java" afterPath="$PROJECT_DIR$/src/AgendamentoVoo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Assento.java" afterPath="$PROJECT_DIR$/src/Assento.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Business.java" afterPath="$PROJECT_DIR$/src/Business.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Economy.java" afterPath="$PROJECT_DIR$/src/Economy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FirstClass.java" afterPath="$PROJECT_DIR$/src/FirstClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProgramaFidelidade.java" afterPath="$PROJECT_DIR$/src/ProgramaFidelidade.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voo.java" afterPath="$PROJECT_DIR$/src/Voo.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,36 +24,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AgendamentoVoo.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AgendamentoVoo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AgendamentoVoo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="136" column="73" lean-forward="false" selection-start-line="136" selection-start-column="73" selection-end-line="136" selection-end-column="73" />
+            <state relative-caret-position="-213">
+              <caret line="85" column="37" lean-forward="false" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
               <folding>
-                <element signature="e#1261#1306#0" expanded="false" />
+                <element signature="docComment;class#AgendamentoVoo#0" expanded="false" />
+                <element signature="method#retornarEscala#0;class#AgendamentoVoo#0" expanded="false" />
+                <element signature="method#imprimirVoo#0;class#AgendamentoVoo#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pessoa.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pessoa.java">
+      <file leaf-file-name="Business.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Business.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="3256">
+              <caret line="150" column="5" lean-forward="false" selection-start-line="133" selection-start-column="30" selection-end-line="150" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Economy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Economy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3080">
+              <caret line="142" column="31" lean-forward="false" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FirstClass.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FirstClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-              <folding>
-                <element signature="method#CancelamentoVoo#0;class#FirstClass#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -61,10 +63,11 @@
       <file leaf-file-name="Voo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Voo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="702">
+              <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
               <folding>
                 <element signature="docComment;class#Voo#0" expanded="false" />
+                <element signature="method#getData#0;class#Voo#0" expanded="false" />
                 <element signature="method#setPiloto#0;class#Voo#0" expanded="false" />
                 <element signature="method#setCoPiloto#0;class#Voo#0" expanded="false" />
                 <element signature="method#setTripulacao#0;class#Voo#0" expanded="false" />
@@ -73,15 +76,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Assento.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Assento.java">
+      <file leaf-file-name="FirstClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FirstClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="660">
+              <caret line="32" column="5" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="32" selection-end-column="5" />
               <folding>
-                <element signature="docComment;class#Assento#0" expanded="false" />
-                <element signature="e#1587#1588#0" expanded="true" />
-                <element signature="e#1623#1624#0" expanded="true" />
+                <element signature="method#CancelamentoVoo#0;class#FirstClass#0" expanded="false" />
+                <element signature="method#mapaAssentos#0;class#FirstClass#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -123,14 +125,14 @@
         <option value="$PROJECT_DIR$/src/Tripulacao.java" />
         <option value="$PROJECT_DIR$/src/Passageiro.java" />
         <option value="$PROJECT_DIR$/src/EnumAlimentacao.java" />
-        <option value="$PROJECT_DIR$/src/Business.java" />
         <option value="$PROJECT_DIR$/src/CartaoEmbarque.java" />
-        <option value="$PROJECT_DIR$/src/Economy.java" />
         <option value="$PROJECT_DIR$/src/ProgramaFidelidade.java" />
-        <option value="$PROJECT_DIR$/src/Voo.java" />
-        <option value="$PROJECT_DIR$/src/AgendamentoVoo.java" />
         <option value="$PROJECT_DIR$/src/Assento.java" />
         <option value="$PROJECT_DIR$/src/FirstClass.java" />
+        <option value="$PROJECT_DIR$/src/Business.java" />
+        <option value="$PROJECT_DIR$/src/Economy.java" />
+        <option value="$PROJECT_DIR$/src/Voo.java" />
+        <option value="$PROJECT_DIR$/src/AgendamentoVoo.java" />
       </list>
     </option>
   </component>
@@ -162,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,13 +207,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -654,6 +656,10 @@
       <workItem from="1491157488044" duration="210000" />
       <workItem from="1491174409157" duration="1592000" />
       <workItem from="1491222763444" duration="4917000" />
+      <workItem from="1491234334134" duration="134000" />
+      <workItem from="1491246788198" duration="1387000" />
+      <workItem from="1491248361997" duration="1501000" />
+      <workItem from="1491249973091" duration="1060000" />
     </task>
     <task id="LOCAL-00001" summary="correcao construtor Voo">
       <created>1491174714238</created>
@@ -673,28 +679,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11837000" />
+    <option name="totallyTimeSpent" value="15919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41383097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31394073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5356751" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123958334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -723,7 +728,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -732,12 +737,93 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Voo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="docComment;class#Voo#0" expanded="false" />
+            <element signature="method#getData#0;class#Voo#0" expanded="false" />
+            <element signature="method#setPiloto#0;class#Voo#0" expanded="false" />
+            <element signature="method#setCoPiloto#0;class#Voo#0" expanded="false" />
+            <element signature="method#setTripulacao#0;class#Voo#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Assento#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AgendamentoVoo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2943">
+          <caret line="136" column="57" lean-forward="false" selection-start-line="136" selection-start-column="57" selection-end-line="136" selection-end-column="57" />
+          <folding>
+            <element signature="docComment;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#retornarEscala#0;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#imprimirVoo#0;class#AgendamentoVoo#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pessoa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="docComment;class#Voo#0" expanded="false" />
+            <element signature="method#getData#0;class#Voo#0" expanded="false" />
+            <element signature="method#setPiloto#0;class#Voo#0" expanded="false" />
+            <element signature="method#setCoPiloto#0;class#Voo#0" expanded="false" />
+            <element signature="method#setTripulacao#0;class#Voo#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Assento#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FirstClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding>
+            <element signature="method#CancelamentoVoo#0;class#FirstClass#0" expanded="false" />
+            <element signature="method#mapaAssentos#0;class#FirstClass#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AgendamentoVoo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1261#1306#0" expanded="false" />
+            <element signature="docComment;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#retornarEscala#0;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#imprimirVoo#0;class#AgendamentoVoo#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -746,7 +832,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3699">
           <caret line="137" column="34" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#CancelamentoVoo#0;class#FirstClass#0" expanded="false" />
+            <element signature="method#mapaAssentos#0;class#FirstClass#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -756,6 +845,7 @@
           <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
           <folding>
             <element signature="docComment;class#Voo#0" expanded="false" />
+            <element signature="method#getData#0;class#Voo#0" expanded="false" />
             <element signature="method#setPiloto#0;class#Voo#0" expanded="false" />
             <element signature="method#setCoPiloto#0;class#Voo#0" expanded="false" />
             <element signature="method#setTripulacao#0;class#Voo#0" expanded="false" />
@@ -778,7 +868,9 @@
         <state relative-caret-position="756">
           <caret line="30" column="68" lean-forward="false" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
           <folding>
-            <element signature="e#1261#1306#0" expanded="false" />
+            <element signature="docComment;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#retornarEscala#0;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#imprimirVoo#0;class#AgendamentoVoo#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -787,7 +879,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3645">
           <caret line="137" column="34" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#CancelamentoVoo#0;class#FirstClass#0" expanded="false" />
+            <element signature="method#mapaAssentos#0;class#FirstClass#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -807,6 +902,7 @@
           <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding>
             <element signature="docComment;class#Voo#0" expanded="false" />
+            <element signature="method#getData#0;class#Voo#0" expanded="false" />
             <element signature="method#setPiloto#0;class#Voo#0" expanded="false" />
             <element signature="method#setCoPiloto#0;class#Voo#0" expanded="false" />
             <element signature="method#setTripulacao#0;class#Voo#0" expanded="false" />
@@ -819,7 +915,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1261#1306#0" expanded="false" />
+            <element signature="docComment;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#retornarEscala#0;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#imprimirVoo#0;class#AgendamentoVoo#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -828,7 +926,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3645">
           <caret line="137" column="34" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#CancelamentoVoo#0;class#FirstClass#0" expanded="false" />
+            <element signature="method#mapaAssentos#0;class#FirstClass#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -838,6 +939,7 @@
           <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
           <folding>
             <element signature="docComment;class#Voo#0" expanded="false" />
+            <element signature="method#getData#0;class#Voo#0" expanded="false" />
             <element signature="method#setPiloto#0;class#Voo#0" expanded="false" />
             <element signature="method#setCoPiloto#0;class#Voo#0" expanded="false" />
             <element signature="method#setTripulacao#0;class#Voo#0" expanded="false" />
@@ -860,7 +962,9 @@
         <state relative-caret-position="81">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#1261#1306#0" expanded="false" />
+            <element signature="docComment;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#retornarEscala#0;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#imprimirVoo#0;class#AgendamentoVoo#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -871,6 +975,7 @@
           <caret line="74" column="12" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
           <folding>
             <element signature="docComment;class#Voo#0" expanded="false" />
+            <element signature="method#getData#0;class#Voo#0" expanded="false" />
             <element signature="method#setPiloto#0;class#Voo#0" expanded="false" />
             <element signature="method#setCoPiloto#0;class#Voo#0" expanded="false" />
             <element signature="method#setTripulacao#0;class#Voo#0" expanded="false" />
@@ -892,7 +997,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="method#CancelamentoVoo#0;class#FirstClass#0" expanded="false" />
+            <element signature="method#mapaAssentos#0;class#FirstClass#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -900,7 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,7 +1034,9 @@
         <state relative-caret-position="81">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#1261#1306#0" expanded="false" />
+            <element signature="docComment;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#retornarEscala#0;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#imprimirVoo#0;class#AgendamentoVoo#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -957,7 +1066,9 @@
         <state relative-caret-position="150">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#1261#1306#0" expanded="false" />
+            <element signature="docComment;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#retornarEscala#0;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#imprimirVoo#0;class#AgendamentoVoo#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -994,7 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,7 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,7 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,7 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,7 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,15 +1141,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Economy.java">
+    <entry file="file://$PROJECT_DIR$/src/tipoAlimentacao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="94" column="38" lean-forward="false" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="81">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tripulacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProgramaFidelidade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1053,26 +1171,165 @@
           <ID>JAVA</ID>
           <OriginalElement />
           <nodes>
-            <node x="" y="">Tripulacao</node>
-            <node x="" y="">Pessoa</node>
-            <node x="" y="">Economy</node>
-            <node x="" y="">Business</node>
-            <node x="" y="">CoPiloto</node>
-            <node x="" y="">FirstClass</node>
-            <node x="" y="">Piloto</node>
-            <node x="" y="">CartaoEmbarque</node>
-            <node x="" y="">ComissarioBordo</node>
-            <node x="" y="">Compania</node>
-            <node x="" y="">Passageiro</node>
-            <node x="" y="">Assento</node>
-            <node x="" y="">AgendamentoVoo</node>
-            <node x="" y="">ProgramaFidelidade</node>
-            <node x="" y="">Voo</node>
+            <node x="516.0849537037038" y="310.5">Tripulacao</node>
+            <node x="1817.6499999999999" y="0.0">Pessoa</node>
+            <node x="874.0" y="567.0">Economy</node>
+            <node x="1228.0" y="567.0">Business</node>
+            <node x="671.0" y="676.0">CoPiloto</node>
+            <node x="1582.0" y="540.0">FirstClass</node>
+            <node x="271.0" y="676.0">Piloto</node>
+            <node x="1988.0" y="554.5">CartaoEmbarque</node>
+            <node x="474.0" y="689.5">ComissarioBordo</node>
+            <node x="2450.0" y="310.5">Passageiro</node>
+            <node x="0.0" y="634.5">Compania</node>
+            <node x="1225.0" y="188.0">Assento</node>
+            <node x="1765.159953703704" y="1586.0">AgendamentoVoo</node>
+            <node x="2414.0" y="649.0">ProgramaFidelidade</node>
+            <node x="921.5849537037041" y="956.0">Voo</node>
           </nodes>
           <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5324511657214871" x="1285.487573964497" y="723.5" />
-          <SelectedNodes />
+          <edges>
+            <edge source="Voo" target="Pessoa">
+              <point x="221.54999999999995" y="-290.0" />
+              <point x="1459.634953703704" y="926.0" />
+              <point x="1977.5" y="926.0" />
+              <point x="1977.5" y="158.0" />
+              <point x="1945.5249999999999" y="158.0" />
+              <point x="34.875" y="59.0" />
+            </edge>
+            <edge source="Assento" target="Pessoa">
+              <point x="0.0" y="-141.0" />
+              <point x="1395.0" y="148.0" />
+              <point x="1852.5249999999999" y="148.0" />
+              <point x="-58.125" y="59.0" />
+            </edge>
+            <edge source="Voo" target="CoPiloto">
+              <point x="-94.94999999999993" y="-290.0" />
+              <point x="1143.134953703704" y="906.0" />
+              <point x="762.5" y="906.0" />
+              <point x="0.0" y="32.0" />
+            </edge>
+            <edge source="Voo" target="FirstClass">
+              <point x="94.95000000000005" y="-290.0" />
+              <point x="1333.034953703704" y="906.0" />
+              <point x="1769.0" y="906.0" />
+              <point x="0.0" y="168.0" />
+            </edge>
+            <edge source="FirstClass" target="Pessoa">
+              <point x="74.79999999999995" y="-168.0" />
+              <point x="1843.7999999999997" y="520.0" />
+              <point x="1835.8561342592593" y="520.0" />
+              <point x="1835.8561342592593" y="158.0" />
+              <point x="1875.7749999999999" y="158.0" />
+              <point x="-34.875" y="59.0" />
+            </edge>
+            <edge source="Piloto" target="Tripulacao">
+              <point x="0.0" y="-32.0" />
+              <point x="362.5" y="520.0" />
+              <point x="538.2516203703706" y="520.0" />
+              <point x="-44.333333333333314" y="18.5" />
+            </edge>
+            <edge source="AgendamentoVoo" target="Voo">
+              <point x="-53.25" y="-73.0" />
+              <point x="1818.409953703704" y="1561.0" />
+              <point x="1238.084953703704" y="1561.0" />
+              <point x="0.0" y="290.0" />
+            </edge>
+            <edge source="Voo" target="Piloto">
+              <point x="-221.54999999999984" y="-290.0" />
+              <point x="1016.5349537037042" y="926.0" />
+              <point x="362.5" y="926.0" />
+              <point x="0.0" y="32.0" />
+            </edge>
+            <edge source="Voo" target="Business">
+              <point x="31.650000000000034" y="-290.0" />
+              <point x="1269.7349537037042" y="896.0" />
+              <point x="1395.0" y="896.0" />
+              <point x="0.0" y="141.0" />
+            </edge>
+            <edge source="ProgramaFidelidade" target="Passageiro">
+              <point x="0.0" y="-59.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="Passageiro" target="Pessoa">
+              <point x="0.0" y="-18.5" />
+              <point x="2517.0" y="148.0" />
+              <point x="1968.7749999999999" y="148.0" />
+              <point x="58.125" y="59.0" />
+            </edge>
+            <edge source="CoPiloto" target="Tripulacao">
+              <point x="0.0" y="-32.0" />
+              <point x="762.5" y="520.0" />
+              <point x="626.9182870370372" y="520.0" />
+              <point x="44.33333333333337" y="18.5" />
+            </edge>
+            <edge source="Voo" target="CartaoEmbarque">
+              <point x="284.8499999999999" y="-290.0" />
+              <point x="1522.934953703704" y="936.0" />
+              <point x="2191.0" y="936.0" />
+              <point x="0.0" y="153.5" />
+            </edge>
+            <edge source="Voo" target="ComissarioBordo">
+              <point x="-158.2499999999999" y="-290.0" />
+              <point x="1079.8349537037043" y="916.0" />
+              <point x="562.5" y="916.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="ComissarioBordo" target="Tripulacao">
+              <point x="0.0" y="-18.5" />
+              <point x="562.5" y="520.0" />
+              <point x="582.5849537037038" y="520.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="Economy" target="Assento">
+              <point x="111.33333333333337" y="-141.0" />
+              <point x="1152.3333333333335" y="510.0" />
+              <point x="1319.4444444444443" y="510.0" />
+              <point x="-75.55555555555554" y="141.0" />
+            </edge>
+            <edge source="FirstClass" target="Assento">
+              <point x="-2.8421709430404007E-14" y="-168.0" />
+              <point x="1768.9999999999998" y="490.0" />
+              <point x="1546.111111111111" y="490.0" />
+              <point x="151.1111111111111" y="141.0" />
+            </edge>
+            <edge source="Tripulacao" target="Pessoa">
+              <point x="0.0" y="-18.5" />
+              <point x="582.5849537037038" y="138.0" />
+              <point x="1829.2749999999999" y="138.0" />
+              <point x="-81.375" y="59.0" />
+            </edge>
+            <edge source="Voo" target="Compania">
+              <point x="-284.8499999999998" y="-290.0" />
+              <point x="953.2349537037043" y="936.0" />
+              <point x="125.5" y="936.0" />
+              <point x="0.0" y="73.5" />
+            </edge>
+            <edge source="Business" target="Assento">
+              <point x="111.33333333333326" y="-141.0" />
+              <point x="1506.3333333333333" y="520.0" />
+              <point x="1432.7777777777776" y="520.0" />
+              <point x="37.777777777777715" y="141.0" />
+            </edge>
+            <edge source="Voo" target="Economy">
+              <point x="-31.649999999999977" y="-290.0" />
+              <point x="1206.4349537037042" y="896.0" />
+              <point x="1041.0" y="896.0" />
+              <point x="0.0" y="141.0" />
+            </edge>
+            <edge source="AgendamentoVoo" target="Pessoa">
+              <point x="53.25" y="-73.0" />
+              <point x="1924.909953703704" y="1561.0" />
+              <point x="2630.5" y="1561.0" />
+              <point x="2630.5" y="138.0" />
+              <point x="1992.0249999999999" y="138.0" />
+              <point x="81.375" y="59.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.4823059360730594" x="334.0" y="488.0" />
+          <SelectedNodes>
+            <node>Business</node>
+          </SelectedNodes>
           <Categories>
             <Category>Fields</Category>
             <Category>Inner Classes</Category>
@@ -1085,53 +1342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tipoAlimentacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tripulacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProgramaFidelidade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="docComment;class#Voo#0" expanded="false" />
-            <element signature="method#setPiloto#0;class#Voo#0" expanded="false" />
-            <element signature="method#setCoPiloto#0;class#Voo#0" expanded="false" />
-            <element signature="method#setTripulacao#0;class#Voo#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pessoa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1140,34 +1350,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AgendamentoVoo.java">
+    <entry file="file://$PROJECT_DIR$/src/Assento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="136" column="73" lean-forward="false" selection-start-line="136" selection-start-column="73" selection-end-line="136" selection-end-column="73" />
+        <state relative-caret-position="-158">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#1261#1306#0" expanded="false" />
+            <element signature="docComment;class#Assento#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Assento.java">
+    <entry file="file://$PROJECT_DIR$/src/Economy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="3080">
+          <caret line="142" column="31" lean-forward="false" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3256">
+          <caret line="150" column="5" lean-forward="false" selection-start-line="133" selection-start-column="30" selection-end-line="150" selection-end-column="5" />
           <folding>
-            <element signature="docComment;class#Assento#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        <state relative-caret-position="660">
+          <caret line="32" column="5" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="method#CancelamentoVoo#0;class#FirstClass#0" expanded="false" />
+            <element signature="method#mapaAssentos#0;class#FirstClass#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding>
+            <element signature="docComment;class#Voo#0" expanded="false" />
+            <element signature="method#getData#0;class#Voo#0" expanded="false" />
+            <element signature="method#setPiloto#0;class#Voo#0" expanded="false" />
+            <element signature="method#setCoPiloto#0;class#Voo#0" expanded="false" />
+            <element signature="method#setTripulacao#0;class#Voo#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AgendamentoVoo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="85" column="37" lean-forward="false" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
+          <folding>
+            <element signature="docComment;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#retornarEscala#0;class#AgendamentoVoo#0" expanded="false" />
+            <element signature="method#imprimirVoo#0;class#AgendamentoVoo#0" expanded="false" />
           </folding>
         </state>
       </provider>

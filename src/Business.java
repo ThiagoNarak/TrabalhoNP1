@@ -13,6 +13,7 @@ public class Business extends Assento {
     private double taxaCancelamento;
     private int prioridade;
     private Assento assentosBusiness[][] = new Assento[8][4];
+    private Pessoa pessoa[][] =new Pessoa[8][4];
 
     //construtor personalisado
 
@@ -147,5 +148,9 @@ public class Business extends Assento {
         }
         System.out.print("\nLegenda: X - Ocupado / Y - Livre\n");
         System.out.println();
+    }
+    public void setPessoa(Pessoa pessoa,int fila,char coluna){
+        this.pessoa[fila - 1][coluna - 'A']=pessoa;
+
     }
 }

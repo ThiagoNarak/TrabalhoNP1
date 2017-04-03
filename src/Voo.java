@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Voo extends Compania {
 
     //ATRIBUTOS------------------------------------------------
+    private  String escala;
     private Date data;
     private String horario;
     private String origem;
@@ -25,17 +26,29 @@ public class Voo extends Compania {
     Economy economy ;          // CRIA UMA CLASSE ECONOMY PARA O VOO
 
     //CONSTRUTOR SUPER------------------------------------------------
-    public Voo(String ciaArea, Date data, String origem, String destino) {
+    public Voo(String ciaArea, Date data, String origem,String escala, String destino) {
         super(ciaArea);
-        firstClass= new FirstClass();
-        business = new Business();
-        economy = new Economy();
         this.data = data;
-        this.horario = horario;
         this.origem = origem;
+        this.escala = escala;
         this.destino = destino;
+        firstClass=new FirstClass();
+        business=new Business();
+        economy=new Economy();
         this.codigo = AgendamentoVoo.codigo;
         AgendamentoVoo.codigo++;
+    }
+    public Voo(String ciaArea, Date data, String origem, String destino) {
+        super(ciaArea);
+        this.data = data;
+        this.origem = origem;
+        this.destino = destino;
+        firstClass=new FirstClass();
+        business=new Business();
+        economy=new Economy();
+        this.codigo = AgendamentoVoo.codigo;
+        AgendamentoVoo.codigo++;
+
     }
 
     //GETSETS------------------------------------------------
@@ -66,6 +79,11 @@ public class Voo extends Compania {
         //faz o tratamento direto das 3 primeiras letras do local
         this.origem = origem.substring(0,3);
     }
+
+    public String getEscala() {
+        return escala;
+    }
+
     public String getDestino() {
         return destino;
     }

@@ -13,6 +13,8 @@ public class Economy extends Assento {
     private double taxaCancelamento;
     private int prioridade;
     private Assento assentosEconomy[][] = new Assento[10][6];
+    private Pessoa pessoa[][] =new Pessoa[10][6];
+
 
 
     //construtor personalisado
@@ -31,7 +33,10 @@ public class Economy extends Assento {
             }
         }
     }
+    public void setPessoa(Pessoa pessoa,int fila,char coluna){
+        this.pessoa[fila - 1][coluna - 'A']=pessoa;
 
+    }
     //metodo de cancelamento
 
     public void CancelamentoVoo(Voo voo){

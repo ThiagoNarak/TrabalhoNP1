@@ -128,7 +128,11 @@ public class FirstClass extends Assento {
     public void cancelAssento(int fila, char coluna) {
         assentosPrimeiraClasse[fila - 1][coluna - 'A'].setAssentoEstado(false);
     }
+    //adicionar pessoa
+    public void setPessoa(Pessoa pessoa,int fila,char coluna){
+        this.pessoa[fila - 1][coluna - 'A']=pessoa;
 
+    }
 
     // reserva assento
     public void setAssentosPrimeiraClasse(int fila, char coluna) {
