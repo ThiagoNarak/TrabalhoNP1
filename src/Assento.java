@@ -43,6 +43,7 @@ public class Assento {
     }
 
     public tipoAlimentacao getAlimentacao() {
+
         return alimentacao;
     }
 
