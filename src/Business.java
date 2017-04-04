@@ -13,7 +13,7 @@ public class Business extends Assento {
     private double taxaCancelamento;
     private int prioridade;
     private Assento assentosBusiness[][] = new Assento[8][4];
-    private Pessoa pessoa[][] =new Pessoa[8][4];
+    private Pessoa pessoa[][] = new Pessoa[8][4];
 
     //construtor personalisado
 
@@ -123,34 +123,51 @@ public class Business extends Assento {
     }
     // cancela assento que havia sido reservado
 
-    public void cancelAssento(int fila, char coluna){
-        assentosBusiness[fila - 4][coluna - 'A'].setAssentoEstado(false);
+    public void cancelAssento(int fila, char coluna) {
+        assentosBusiness[fila - 1][coluna - 'A'].setAssentoEstado(false);
     }
+
     // reserva assento desejado
     public void setAssentosBusiness(int fila, char coluna) {
-        assentosBusiness[fila - 4][coluna - 'A'].setAssentoEstado(true);
+        assentosBusiness[fila - 1][coluna - 'A'].setAssentoEstado(true);
     }
+
     // imprime mapa de assentos
-    public void mapaAssentos(){
+    public void mapaAssentos() {
         System.out.printf("%n%40s%n", "MAPA CLASSE BUSINESS");
         System.out.printf("%16s%9s%9s%9s%n", "A", "B", "C", "D");
 
-        for (int fileira = 0; fileira < assentosBusiness.length; fileira++){
+        for (int fileira = 0; fileira < assentosBusiness.length; fileira++) {
             System.out.printf("Fila #%-8d ", fileira + 4);
             for (int coluna = 0; coluna < assentosBusiness[fileira].length; coluna++) {
-                if (assentosBusiness[fileira][coluna].getAssentoEstado())
+                if (assentosBusiness[fileira][coluna].getAssentoEstado()) {
                     System.out.printf("%-8s ", "X ");
-                else
+                    AgendamentoVoo.contadorPassageirosPartirvoo++;
+
+                } else {
                     System.out.printf("%-8s ", "O ");
+                }
+
             }
             System.out.println();
 
+
         }
-        System.out.print("\nLegenda: X - Ocupado / Y - Livre\n");
+        System.out.print("\nLegenda: X - Ocupado / O - Livre\n");
         System.out.println();
+
     }
-    public void setPessoa(Pessoa pessoa,int fila,char coluna){
-        this.pessoa[fila - 1][coluna - 'A']=pessoa;
+
+    public Pessoa[][] getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(Pessoa[][] pessoa) {
+        this.pessoa = pessoa;
+    }
+
+    public void setPessoa(Pessoa pessoa, int fila, char coluna) {
+        this.pessoa[fila - 1][coluna - 'A'] = pessoa;
 
     }
 }

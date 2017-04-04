@@ -1,3 +1,5 @@
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Random;
@@ -10,26 +12,32 @@ public class AgendamentoVoo {
     private static int linha,coluna;;
     static CartaoEmbarque cartaoEmbarque= new CartaoEmbarque();
     static int codigo=1;
+    static int contadorPassageirosPartirvoo=0;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         char menu;
         //CRIADO VETOR DE VOOS
         ArrayList<Voo> voolist=new ArrayList<>();
-
+                System.out.println("            ainda vou casar com essa mulher..." );
+                System.out.println("            THIAGO e ...(no codigo fonte esta a resposta.)");
+                //                              System.out.println("THIAGO E LAIS");
+                System.out.println("            quem apoia grita !!!AEWWW!!!");
 
         do{
             System.out.println("MENU");
             System.out.println("a- Configurar Voo");
             System.out.println("b- Verificar voos disponiveis");
             System.out.println("c- Comprar passagem");
-            System.out.println("d- Mos dos assentos");
+            System.out.println("d- Mostrar os assentos");
             System.out.println("e- Emititrar mapar catao de embarque");
-            System.out.println("f- Cadastrar passageiros");
+            System.out.println("f- Cadastrar passageiros---- NAO IMPLEMENTADO/ letra C atringe este requisito.");
             System.out.println("g- Cadatrar tripulantes");
-            System.out.println("h- Mostrar voos (origem <-- destino)");
+            System.out.println("h- Mostrar voos (origem <-- destino)---- NAO IMPLEMENTADO/ letra B atringe este requisito.");
             System.out.println("i- Cancelamento da viagem (EXTRA)");
-            System.out.println("j- Imprimir passageiros do voo (EXTRA)");
+            System.out.println("j- Partir voo");
+            System.out.println("l- Imprimir passageiros de Voo");
+
             menu=scanner.next().charAt(0);
             switch (menu) {
                 case 'a':
@@ -110,22 +118,15 @@ public class AgendamentoVoo {
                                         System.out.println("digite outro assento pois esta ocupado");
                                     } else {
                                         v.firstClass.setAssentosPrimeiraClasse(fila, coluna);
-                                        System.out.println("digite o nome do comprador da passagem");
                                         Pessoa pessoa = new Pessoa();
+                                        System.out.println("digite o nome do comprador da passagem");
                                         pessoa.setNome(scanner.nextLine());
                                         pessoa.setNome(scanner.nextLine());
                                         System.out.println("digite o sobrenome");
                                         pessoa.setSobrenome(scanner.nextLine());
                                         v.firstClass.setPessoa(pessoa, fila, coluna);
                                         System.out.printf("\nVALOR DA PASSAGEM: %.2f\n",kilometragem);
-                                        cartaoEmbarque.setNome(pessoa.getNome());
-                                        cartaoEmbarque.setSobrenome(pessoa.getSobrenome());
-                                        cartaoEmbarque.setOrigem(v.getOrigem());
-                                        cartaoEmbarque.setDestino(v.getDestino());
-                                        cartaoEmbarque.setHorario(v.getData());
-                                        cartaoEmbarque.setNomeCiaAerea(v.getCiaArea());
-                                        cartaoEmbarque.setSetorAeronave(3);
-                                        cartaoEmbarque.setClasse(v.firstClass.toString());
+                                       guardarUltimoCartaoDeEmbarque(pessoa,v);
                                     }
 
                                 }
@@ -148,12 +149,19 @@ public class AgendamentoVoo {
                                         System.out.println("digite outro assento pois esta ocupado");
                                     } else {
                                         v.business.setAssentosBusiness(fila, coluna);
-                                        System.out.println("digite o nome do comprador da passagem");
+
                                         Pessoa pessoa = new Pessoa();
+                                        System.out.println("digite o nome do comprador da passagem");
                                         pessoa.setNome(scanner.nextLine());
+                                        pessoa.setNome(scanner.nextLine());
+                                        System.out.println("digite o sobrenome do comprador da passagem");
                                         pessoa.setSobrenome(scanner.nextLine());
                                         v.business.setPessoa(pessoa, fila, coluna);
+                                        System.out.printf("\nVALOR DA PASSAGEM: %.2f\n",kilometragem);
+
                                         //TODO: TERMINAR INSERSAO DO CARTAO DE EMBARQUE
+
+                                    guardarUltimoCartaoDeEmbarque(pessoa,v);
                                     }
 
                                 }
@@ -177,12 +185,17 @@ public class AgendamentoVoo {
                                         System.out.println("digite outro assento pois esta ocupado");
                                     } else {
                                         v.economy.setAssentosEconomy(fila, coluna);
-                                        System.out.println("digite o nome do comprador da passagem");
                                         Pessoa pessoa = new Pessoa();
+                                        System.out.println("digite o Nome do comprador da passagem");
                                         pessoa.setNome(scanner.nextLine());
+                                        pessoa.setNome(scanner.nextLine());
+                                        System.out.println("digite o Sobrenome do comprador da passagem");
                                         pessoa.setSobrenome(scanner.nextLine());
                                         v.economy.setPessoa(pessoa, fila, coluna);
+                                        System.out.printf("\nVALOR DA PASSAGEM: %.2f\n",kilometragem);
+
                                         //TODO: TERMINAR INSERSAO DO CARTAO DE EMBARQUE
+                                        guardarUltimoCartaoDeEmbarque(pessoa,v);
                                     }
 
                                 }
@@ -209,14 +222,47 @@ public class AgendamentoVoo {
                     break;
                 case 'e':
                     //TODO: FINALIZAR CARTAO DE EMBARQUE
-                    System.out.println("impressao Cartao de embarque");
-                    System.out.println("CIA: "+cartaoEmbarque.getNomeCiaAerea());
-                    System.out.println("nome: "+cartaoEmbarque.getNome());
-                    System.out.println("Origem: "+cartaoEmbarque.getOrigem());
-                    System.out.println("Destino: "+cartaoEmbarque.getDestino());
-                    System.out.println("prioridade: "+cartaoEmbarque.getPrioridade());
-                    System.out.println("classe: "+cartaoEmbarque.getClasse());
-                    //EMITIR CARTAO EMBARQUE
+                    System.out.println("deseja imprimir o ultimo cartao de embarque ou requisitar um novo cartao de embarque.");
+                    System.out.println("digite true para sim. \n" +
+                            " false para nao.");
+                    boolean respostaCartao=scanner.nextBoolean();
+                    if(respostaCartao==true) {
+                        System.out.println("impressao Cartao de embarque");
+                        System.out.println("CIA: " + cartaoEmbarque.getNomeCiaAerea());
+                        System.out.println("nome: " + cartaoEmbarque.getNome());
+                        System.out.println("Origem: " + cartaoEmbarque.getOrigem());
+                        System.out.println("Destino: " + cartaoEmbarque.getDestino());
+                        System.out.println("prioridade: " + cartaoEmbarque.getPrioridade());
+                        System.out.println("classe: " + cartaoEmbarque.getClasse());
+                        //EMITIR CARTAO EMBARQUE
+                    }else{
+                        System.out.println("digite o codigo do voo");
+                        for (Voo v:voolist) {
+                            imprimirVoo(v);
+                        }
+                        System.out.println("digite o codigo Voo cujo tem a passagem");
+                        int vooCodigoTemp=scanner.nextInt();
+                        for (Voo v:voolist) {
+                            if(v.getCodigo()==codigo){
+                                System.out.println("voce esta alocado em qual classe\n " +
+                                        "1 -Primeira classe\n" +
+                                        "2- Bussines\n" +
+                                        "3- Economy\n");
+                                int entradaClasse=scanner.nextInt();
+                                if(entradaClasse==1){
+                                    System.out.println("digite o assento o seu assento");
+                                    System.out.print("FILA: ");
+                                    int fila=scanner.nextInt();
+                                    System.out.print("COLUNA: ");
+                                    char coluna=scanner.next().charAt(0);
+                                    System.out.println("sua passagem foi cancelada com sucesso!!!");
+                                    //TODO: SOCORRAIVOS NAO CONSEGUI TERMINAR.
+                                }
+                            }
+                        }
+
+
+                    }
                     break;
 
                 case 'g':
@@ -256,8 +302,128 @@ public class AgendamentoVoo {
                     }
                     break;
                 case 'i': break; //extra
-                case 'j': break; //extra
+                case 'j':
+                    System.out.println("PARTIR VOO");
+                    for (Voo v:voolist) {
+                        imprimirVoo(v);
 
+
+
+                    }
+                    System.out.println("digite o voo que deseja partir");
+                    voocodigo=scanner.nextInt();
+                    boolean pilotoPronto=false;
+                    for (Voo v:voolist) {
+                    if(v.getCodigo()==voocodigo){
+                        if(v.getPiloto()!=null) {
+                            System.out.println("checando piloto..");
+                            System.out.println("Piloto no aviao cadastrado.");
+                            System.out.println("id: " + v.getPiloto().getId());
+                            System.out.println("Nome:  " + v.getPiloto().getNome());
+                            System.out.println("Sobrenome:  " + (v.getPiloto().getSobrenome()));
+                            pilotoPronto=true;
+                        }
+                        boolean copilotoPronto=false;
+
+                        if(v.getCoPiloto()!=null){
+                            System.out.println();
+                            System.out.println("checando copiloto...");
+                            System.out.println("Copiloto ");
+                            System.out.println("id: " + v.getCoPiloto().getId());
+                            System.out.println("Nome:  " + v.getCoPiloto().getNome());
+                            System.out.println("Sobrenome:  " + (v.getCoPiloto().getSobrenome()));
+                            copilotoPronto=true;
+                        }
+                        System.out.println();
+                        System.out.println("checando tripulantes...");
+                        int contadorTripulantes=0;
+                        boolean TripulantesPronto=false;
+                        for (Pessoa tripulantes:v.getTripulacaolist()) {
+                            if (tripulantes != null) {
+                                System.out.println("id: " + tripulantes.getId());
+                                System.out.println("Nome:  " + tripulantes.getNome());
+                                System.out.println("Sobrenome:  " + (tripulantes.getSobrenome()));
+                                contadorTripulantes++;
+                            }
+                            if(contadorTripulantes>=4){
+                                TripulantesPronto=true;
+                            }
+                        }
+                        //checagem passageiros
+                        AgendamentoVoo.contadorPassageirosPartirvoo=0;
+                        boolean passageirosProntos=false;
+                        v.firstClass.mapaAssentos();
+                        v.business.mapaAssentos();
+                        v.economy.mapaAssentos();
+                        if(contadorPassageirosPartirvoo>=10){
+                            passageirosProntos=true;
+                        }
+                        if(pilotoPronto==true&&copilotoPronto==true&&passageirosProntos==true){
+                            System.out.println("AVIAO PODE PARTIR");
+                        }else{
+                            System.out.println("aviao nao atinge requisitos necessarios abaixo");
+                            System.out.println("1 piloto.");
+                            System.out.println("1 CoPiloto.");
+                            System.out.println("4 Tripulantes.");
+                            System.out.println("10 Passageiros.");
+                        }
+
+                    }
+                    }
+                    break; //extra
+                case 'l':
+                    for (Voo v:voolist) {
+                        imprimirVoo(v);
+                    }
+                    System.out.println("digite o codigo do voo");
+                    voocodigo=scanner.nextInt();
+                    System.out.println("PESSOAS DENTRO DO VOO \n classe economica.");
+
+                    for (Voo v:voolist) {
+                        if(voocodigo==v.getCodigo()){
+                            //firstclass
+                            Pessoa pessoasCadastrados[][]=v.firstClass.getPessoa();
+                            for (int i = 0; i <3 ; i++) {
+                                for (int j = 0; j <4 ; j++) {
+                                    if(pessoasCadastrados[i][j]==null) {
+                                    }else{
+                                        System.out.println("nome: " + pessoasCadastrados[i][j].getNome());
+                                        System.out.println("sobrenome: " + pessoasCadastrados[i][j].getSobrenome());
+                                    }
+                                }
+
+                            }
+
+                            //business
+                             pessoasCadastrados=v.business.getPessoa();
+                            System.out.println("PESSOAS DENTRO DO VOO \n classe business.");
+
+                            for (int i = 0; i <8 ; i++) {
+                                for (int j = 0; j <4 ; j++) {
+                                    if(pessoasCadastrados[i][j]==null) {
+                                    }else{
+                                        System.out.println("nome: " + pessoasCadastrados[i][j].getNome());
+                                        System.out.println("sobrenome: " + pessoasCadastrados[i][j].getSobrenome());
+                                    }
+                                }
+
+                            }
+                            //economy
+                            pessoasCadastrados=v.economy.getPessoa();
+                            System.out.println("PESSOAS DENTRO DO VOO \n classe economica.");
+                            for (int i = 0; i <10 ; i++) {
+                                for (int j = 0; j <6 ; j++) {
+                                    if(pessoasCadastrados[i][j]==null) {
+                                    }else{
+                                        System.out.println("nome: " + pessoasCadastrados[i][j].getNome());
+                                        System.out.println("sobrenome: " + pessoasCadastrados[i][j].getSobrenome());
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                    break;
             }
 
         }while(menu!='0');
@@ -496,5 +662,15 @@ public class AgendamentoVoo {
         }
         return distancias[linha][coluna] ;
     }
-
+    public static void guardarUltimoCartaoDeEmbarque(Pessoa pessoa, Voo v){
+        cartaoEmbarque.setNome(pessoa.getNome());
+        cartaoEmbarque.setSobrenome(pessoa.getSobrenome());
+        cartaoEmbarque.setOrigem(v.getOrigem());
+        cartaoEmbarque.setDestino(v.getDestino());
+        cartaoEmbarque.setHorario(v.getData());
+        cartaoEmbarque.setNomeCiaAerea(v.getCiaArea());
+        cartaoEmbarque.setSetorAeronave(3);
+        cartaoEmbarque.setPrioridade(1);
+        cartaoEmbarque.setClasse(v.firstClass.toString().substring(0,10));
+    }
 }

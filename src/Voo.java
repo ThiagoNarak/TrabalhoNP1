@@ -115,6 +115,19 @@ public class Voo extends Compania {
 
         }
     }
+
+    public ArrayList<Pessoa> getTripulacaolist() {
+        return tripulacaolist;
+    }
+
+    public Pessoa getPiloto() {
+        return piloto;
+    }
+
+    public Pessoa getCoPiloto() {
+        return coPiloto;
+    }
+
     public void setCoPiloto(){
         if(!((CoPiloto) coPiloto).isOcupado()){
             Scanner scanner= new Scanner(System.in);

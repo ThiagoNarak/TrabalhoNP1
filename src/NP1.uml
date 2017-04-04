@@ -3,120 +3,120 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="1367.4836752136753" y="330.5">Tripulacao</node>
-    <node x="823.1499999999999" y="0.0">Pessoa</node>
-    <node x="10.5" y="560.0">Economy</node>
-    <node x="404.5" y="560.0">Business</node>
-    <node x="1390.5" y="696.0">CoPiloto</node>
-    <node x="798.5" y="560.0">FirstClass</node>
-    <node x="1593.5" y="696.0">Piloto</node>
-    <node x="2068.5" y="574.5">CartaoEmbarque</node>
-    <node x="1193.5" y="709.5">ComissarioBordo</node>
-    <node x="1796.5" y="654.5">Compania</node>
-    <node x="2473.5" y="330.5">Passageiro</node>
-    <node x="1482.636915954416" y="1626.0">AgendamentoVoo</node>
-    <node x="363.14999999999986" y="208.0">Assento</node>
-    <node x="2437.5" y="669.0">ProgramaFidelidade</node>
-    <node x="816.552834757835" y="996.0">Voo</node>
+    <node x="1367.7577492877492" y="320.5">Tripulacao</node>
+    <node x="649.0730769230768" y="0.0">Pessoa</node>
+    <node x="821.4230769230768" y="589.5">Economy</node>
+    <node x="33.42307692307668" y="589.5">Business</node>
+    <node x="1412.4230769230767" y="726.0">CoPiloto</node>
+    <node x="427.4230769230768" y="590.0">FirstClass</node>
+    <node x="1615.4230769230767" y="726.0">Piloto</node>
+    <node x="2090.4230769230767" y="550.0">CartaoEmbarque</node>
+    <node x="1215.4230769230767" y="739.5">ComissarioBordo</node>
+    <node x="1818.4230769230767" y="684.5">Compania</node>
+    <node x="2630.4230769230767" y="320.5">Passageiro</node>
+    <node x="1532.0910826210825" y="1696.0">AgendamentoVoo</node>
+    <node x="383.36700854700837" y="198.0">Assento</node>
+    <node x="2594.4230769230767" y="699.0">ProgramaFidelidade</node>
+    <node x="700.2417236467236" y="1066.0">Voo</node>
   </nodes>
   <notes />
   <edges>
     <edge source="Assento" target="Pessoa">
       <point x="0.0" y="-141.0" />
-      <point x="533.1499999999999" y="168.0" />
-      <point x="877.3999999999999" y="168.0" />
-      <point x="-38.75" y="59.0" />
+      <point x="553.3670085470084" y="178.0" />
+      <point x="718.8230769230768" y="178.0" />
+      <point x="-23.25" y="59.0" />
     </edge>
     <edge source="Voo" target="CoPiloto">
-      <point x="97.38461538461547" y="-290.0" />
-      <point x="1230.4374501424504" y="936.0" />
-      <point x="1482.0" y="936.0" />
+      <point x="97.38461538461524" y="-290.0" />
+      <point x="1114.1263390313388" y="1006.0" />
+      <point x="1503.9230769230767" y="1006.0" />
       <point x="0.0" y="32.0" />
     </edge>
     <edge source="Voo" target="FirstClass">
-      <point x="-97.38461538461547" y="-290.0" />
-      <point x="1035.6682193732195" y="936.0" />
-      <point x="892.0" y="936.0" />
-      <point x="-93.5" y="168.0" />
-    </edge>
-    <edge source="Economy" target="Pessoa">
-      <point x="-149.60000000000014" y="-168.0" />
-      <point x="47.899999999999864" y="540.0" />
-      <point x="106.85249287749275" y="540.0" />
-      <point x="106.85249287749275" y="148.0" />
-      <point x="846.3999999999999" y="148.0" />
-      <point x="-69.75" y="59.0" />
+      <point x="-97.38461538461536" y="-290.0" />
+      <point x="919.3571082621082" y="1006.0" />
+      <point x="707.9230769230768" y="1006.0" />
+      <point x="93.5" y="168.0" />
     </edge>
     <edge source="Piloto" target="Tripulacao">
       <point x="0.0" y="-32.0" />
-      <point x="1685.0" y="530.0" />
-      <point x="1478.3170085470085" y="530.0" />
+      <point x="1706.9230769230767" y="520.0" />
+      <point x="1478.5910826210825" y="520.0" />
       <point x="44.33333333333326" y="18.5" />
+    </edge>
+    <edge source="Economy" target="Pessoa">
+      <point x="74.79999999999984" y="-168.5" />
+      <point x="1083.2230769230766" y="530.0" />
+      <point x="1115.1230769230767" y="530.0" />
+      <point x="1115.1230769230767" y="178.0" />
+      <point x="765.3230769230768" y="178.0" />
+      <point x="23.25" y="59.0" />
     </edge>
     <edge source="Voo" target="Piloto">
       <point x="146.0769230769231" y="-290.0" />
-      <point x="1279.129757834758" y="946.0" />
-      <point x="1685.0" y="946.0" />
+      <point x="1162.8186467236467" y="1016.0" />
+      <point x="1706.9230769230767" y="1016.0" />
       <point x="0.0" y="32.0" />
     </edge>
     <edge source="Business" target="Pessoa">
-      <point x="149.60000000000002" y="-168.0" />
-      <point x="741.1" y="540.0" />
-      <point x="724.6499999999999" y="540.0" />
-      <point x="724.6499999999999" y="188.0" />
-      <point x="908.3999999999999" y="188.0" />
-      <point x="-7.75" y="59.0" />
+      <point x="-149.60000000000014" y="-168.5" />
+      <point x="70.82307692307654" y="530.0" />
+      <point x="128.74223646723635" y="530.0" />
+      <point x="128.74223646723635" y="158.0" />
+      <point x="687.8230769230768" y="158.0" />
+      <point x="-54.25" y="59.0" />
     </edge>
     <edge source="Voo" target="Business">
       <point x="-194.76923076923072" y="-290.0" />
-      <point x="938.2836039886042" y="956.0" />
-      <point x="498.0" y="956.0" />
-      <point x="-93.5" y="168.0" />
+      <point x="821.9724928774929" y="1026.0" />
+      <point x="313.9230769230767" y="1026.0" />
+      <point x="93.5" y="168.5" />
     </edge>
     <edge source="CoPiloto" target="Tripulacao">
       <point x="0.0" y="-32.0" />
-      <point x="1482.0" y="540.0" />
-      <point x="1433.9836752136753" y="540.0" />
+      <point x="1503.9230769230767" y="530.0" />
+      <point x="1434.2577492877492" y="530.0" />
       <point x="0.0" y="18.5" />
     </edge>
     <edge source="Voo" target="CartaoEmbarque">
       <point x="292.1538461538462" y="-290.0" />
-      <point x="1425.2066809116811" y="976.0" />
-      <point x="2126.6666666666665" y="976.0" />
-      <point x="-116.33333333333348" y="153.5" />
+      <point x="1308.8955698005698" y="1046.0" />
+      <point x="2171.089743589743" y="1046.0" />
+      <point x="-161.33333333333348" y="208.0" />
     </edge>
     <edge source="AgendamentoVoo" target="CartaoEmbarque">
-      <point x="48.87499999999994" y="-86.5" />
-      <point x="1727.011915954416" y="1596.0" />
-      <point x="2243.0" y="1596.0" />
-      <point x="0.0" y="153.5" />
+      <point x="39.75" y="-154.0" />
+      <point x="1730.8410826210825" y="1666.0" />
+      <point x="2332.4230769230767" y="1666.0" />
+      <point x="0.0" y="208.0" />
     </edge>
     <edge source="Voo" target="Economy">
-      <point x="-292.1538461538462" y="-290.0" />
-      <point x="840.8989886039888" y="976.0" />
-      <point x="104.0" y="976.0" />
-      <point x="-93.5" y="168.0" />
+      <point x="0.0" y="-290.0" />
+      <point x="1016.7417236467236" y="986.0" />
+      <point x="1101.9230769230767" y="986.0" />
+      <point x="93.49999999999989" y="168.5" />
     </edge>
     <edge source="Voo" target="Pessoa">
-      <point x="243.46153846153857" y="-290.0" />
-      <point x="1376.5143732193735" y="966.0" />
-      <point x="2058.0" y="966.0" />
-      <point x="2058.0" y="148.0" />
-      <point x="985.8999999999999" y="148.0" />
-      <point x="69.75" y="59.0" />
+      <point x="-292.1538461538462" y="-290.0" />
+      <point x="724.5878774928774" y="1046.0" />
+      <point x="22.923076923076678" y="1046.0" />
+      <point x="22.923076923076678" y="148.0" />
+      <point x="672.3230769230768" y="148.0" />
+      <point x="-69.75" y="59.0" />
     </edge>
     <edge source="FirstClass" target="Pessoa">
-      <point x="74.79999999999995" y="-168.0" />
-      <point x="1060.3" y="540.0" />
-      <point x="1015.2003418803419" y="540.0" />
-      <point x="1015.2003418803419" y="188.0" />
-      <point x="923.8999999999999" y="188.0" />
+      <point x="149.60000000000002" y="-168.0" />
+      <point x="764.0230769230768" y="530.0" />
+      <point x="747.5730769230768" y="530.0" />
+      <point x="747.5730769230768" y="178.0" />
+      <point x="749.8230769230768" y="178.0" />
       <point x="7.75" y="59.0" />
     </edge>
     <edge source="AgendamentoVoo" target="Voo">
-      <point x="-48.875" y="-86.5" />
-      <point x="1629.261915954416" y="1596.0" />
-      <point x="1133.052834757835" y="1596.0" />
+      <point x="-39.75" y="-154.0" />
+      <point x="1651.3410826210825" y="1666.0" />
+      <point x="1016.7417236467236" y="1666.0" />
       <point x="0.0" y="290.0" />
     </edge>
     <edge source="ProgramaFidelidade" target="Passageiro">
@@ -125,64 +125,64 @@
     </edge>
     <edge source="Passageiro" target="Pessoa">
       <point x="0.0" y="-18.5" />
-      <point x="2540.5" y="138.0" />
-      <point x="1001.3999999999999" y="138.0" />
+      <point x="2697.4230769230767" y="138.0" />
+      <point x="827.3230769230768" y="138.0" />
       <point x="85.25" y="59.0" />
     </edge>
     <edge source="Voo" target="ComissarioBordo">
       <point x="48.69230769230762" y="-290.0" />
-      <point x="1181.7451424501426" y="926.0" />
-      <point x="1282.0" y="926.0" />
+      <point x="1065.4340313390312" y="996.0" />
+      <point x="1303.9230769230767" y="996.0" />
       <point x="0.0" y="18.5" />
     </edge>
     <edge source="ComissarioBordo" target="Tripulacao">
       <point x="0.0" y="-18.5" />
-      <point x="1282.0" y="540.0" />
-      <point x="1389.650341880342" y="540.0" />
+      <point x="1303.9230769230767" y="530.0" />
+      <point x="1389.924415954416" y="530.0" />
       <point x="-44.33333333333326" y="18.5" />
     </edge>
-    <edge source="FirstClass" target="Assento">
-      <point x="-149.60000000000014" y="-168.0" />
-      <point x="835.8999999999999" y="530.0" />
-      <point x="608.7055555555554" y="530.0" />
-      <point x="75.55555555555554" y="141.0" />
-    </edge>
     <edge source="Economy" target="Assento">
-      <point x="74.79999999999995" y="-168.0" />
-      <point x="272.29999999999995" y="520.0" />
-      <point x="419.8166666666665" y="520.0" />
-      <point x="-113.33333333333337" y="141.0" />
+      <point x="-74.80000000000018" y="-168.5" />
+      <point x="933.6230769230766" y="510.0" />
+      <point x="666.7003418803416" y="510.0" />
+      <point x="113.33333333333326" y="141.0" />
+    </edge>
+    <edge source="FirstClass" target="Assento">
+      <point x="-74.80000000000007" y="-168.0" />
+      <point x="539.6230769230767" y="530.0" />
+      <point x="553.3670085470084" y="530.0" />
+      <point x="0.0" y="141.0" />
     </edge>
     <edge source="Tripulacao" target="Pessoa">
       <point x="0.0" y="-18.5" />
-      <point x="1433.9836752136753" y="158.0" />
-      <point x="970.3999999999999" y="158.0" />
+      <point x="1434.2577492877492" y="158.0" />
+      <point x="796.3230769230768" y="158.0" />
       <point x="54.25" y="59.0" />
     </edge>
     <edge source="Voo" target="Compania">
       <point x="194.76923076923072" y="-290.0" />
-      <point x="1327.8220655270657" y="956.0" />
-      <point x="1922.0" y="956.0" />
+      <point x="1211.5109544159543" y="1026.0" />
+      <point x="1943.9230769230767" y="1026.0" />
       <point x="0.0" y="73.5" />
     </edge>
     <edge source="Business" target="Assento">
-      <point x="-149.60000000000008" y="-168.0" />
-      <point x="441.89999999999986" y="540.0" />
-      <point x="495.37222222222204" y="540.0" />
-      <point x="-37.77777777777783" y="141.0" />
+      <point x="74.79999999999995" y="-168.5" />
+      <point x="295.22307692307663" y="510.0" />
+      <point x="440.033675213675" y="510.0" />
+      <point x="-113.33333333333337" y="141.0" />
     </edge>
     <edge source="AgendamentoVoo" target="Pessoa">
-      <point x="-146.625" y="-86.5" />
-      <point x="1531.511915954416" y="1606.0" />
-      <point x="0.0" y="1606.0" />
+      <point x="-119.25" y="-154.0" />
+      <point x="1571.8410826210825" y="1676.0" />
+      <point x="0.0" y="1676.0" />
       <point x="0.0" y="138.0" />
-      <point x="830.8999999999999" y="138.0" />
+      <point x="656.8230769230768" y="138.0" />
       <point x="-85.25" y="59.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.46454095656954375" x="1322.0" y="899.4999999999999" />
+  <settings layout="Hierarchic Group" zoom="0.1808300395256917" x="1400.5" y="1001.9999999999999" />
   <SelectedNodes>
-    <node>AgendamentoVoo</node>
+    <node>ProgramaFidelidade</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>

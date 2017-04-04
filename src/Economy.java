@@ -136,28 +136,39 @@ public class Economy extends Assento {
 
     // resernva assento
     public void setAssentosEconomy(int fila, char coluna) {
-        assentosEconomy[fila - 12][coluna - 'A'].setAssentoEstado(true);
+        assentosEconomy[fila-1 ][coluna - 'A'].setAssentoEstado(true);
     }
 
     // imprime mapa de assento
-    public void mapaAssentos(){
+    public void mapaAssentos() {
         System.out.printf("%n%45s%n", "MAPA CLASSE ECONOMY");
         System.out.printf("%16s%9s%9s%9s%9s%9s%n", "A", "B", "C", "D", "E", "F");
 
-        for (int fileira = 0; fileira < assentosEconomy.length; fileira++){
+        for (int fileira = 0; fileira < assentosEconomy.length; fileira++) {
             System.out.printf("Fila #%-8d ", fileira + 12);
             for (int coluna = 0; coluna < assentosEconomy[fileira].length; coluna++) {
-                if (assentosEconomy[fileira][coluna].getAssentoEstado())
+                if (assentosEconomy[fileira][coluna].getAssentoEstado()) {
                     System.out.printf("%-8s ", "X ");
-                else
+                    AgendamentoVoo.contadorPassageirosPartirvoo++;
+
+                } else {
                     System.out.printf("%-8s ", "O ");
+                }
+
             }
             System.out.println();
 
         }
-        System.out.print("\nLegenda: X - Ocupado / Y - Livre\n");
+        System.out.print("\nLegenda: X - Ocupado / O - Livre\n");
         System.out.println();
+
     }
 
+    public Pessoa[][] getPessoa() {
+        return pessoa;
+    }
 
+    public void setPessoa(Pessoa[][] pessoa) {
+        this.pessoa = pessoa;
+    }
 }

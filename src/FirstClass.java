@@ -12,7 +12,7 @@ public class FirstClass extends Assento {
     private double taxaCancelamento;
     private int prioridade;
     private Assento assentosPrimeiraClasse[][] = new Assento[3][4];
-    private Pessoa pessoa[][] =new Pessoa[3][4];
+    private Pessoa pessoa[][] = new Pessoa[3][4];
 
     //construtor personalisado
 
@@ -128,9 +128,10 @@ public class FirstClass extends Assento {
     public void cancelAssento(int fila, char coluna) {
         assentosPrimeiraClasse[fila - 1][coluna - 'A'].setAssentoEstado(false);
     }
+
     //adicionar pessoa
-    public void setPessoa(Pessoa pessoa,int fila,char coluna){
-        this.pessoa[fila - 1][coluna - 'A']=pessoa;
+    public void setPessoa(Pessoa pessoa, int fila, char coluna) {
+        this.pessoa[fila - 1][coluna - 'A'] = pessoa;
 
     }
 
@@ -138,24 +139,39 @@ public class FirstClass extends Assento {
     public void setAssentosPrimeiraClasse(int fila, char coluna) {
         assentosPrimeiraClasse[fila - 1][coluna - 'A'].setAssentoEstado(true);
     }
+
+    public Pessoa[][] getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(Pessoa[][] pessoa) {
+        this.pessoa = pessoa;
+    }
+
     // imprime mapa de assentos
-    public void mapaAssentos(){
+    public void mapaAssentos() {
 
         System.out.printf("%n%40s%n", "MAPA PRIMEIRA CLASSE");
         System.out.printf("%16s%9s%9s%9s%n", "A", "B", "C", "D");
 
-        for (int fileira = 0; fileira < assentosPrimeiraClasse.length; fileira++){
+        for (int fileira = 0; fileira < assentosPrimeiraClasse.length; fileira++) {
             System.out.printf("Fila #%-8d ", fileira + 1);
             for (int coluna = 0; coluna < assentosPrimeiraClasse[fileira].length; coluna++) {
-                if (assentosPrimeiraClasse[fileira][coluna].getAssentoEstado())
+                if (assentosPrimeiraClasse[fileira][coluna].getAssentoEstado()) {
                     System.out.printf("%-8s ", "X ");
-                else
+                    AgendamentoVoo.contadorPassageirosPartirvoo++;
+                } else {
                     System.out.printf("%-8s ", "O ");
+                }
+
+
             }
             System.out.println();
-
         }
+
         System.out.print("\nLegenda: X - Ocupado / O - Livre\n");
         System.out.println();
+
     }
 }
+
